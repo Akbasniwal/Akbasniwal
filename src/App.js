@@ -31,7 +31,7 @@ function App() {
               <div className="container my-5">
                 <Home mode={mode} />
               </div>
-              <div className="my-5">
+              <div className="my-5" id="projects">
                 <Section2 mode={mode} />
               </div>
             </>
