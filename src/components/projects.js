@@ -23,7 +23,7 @@ function Projects(props) {
           content={
             "Password validate is basic sign in feature for any website which tests streangth of password and checks if provided emial is valid is any of the sections does not satisfy eligibility of proposed criteria, on submit it will show error and show in what section It's having error."
           }
-          link={"https://validate-password-o92bsma3s-akbasniwal.vercel.app/"}
+          link={"http://validate-password.vercel.app/"}
           code={"https://github.com/Akbasniwal/Validate-password"}
           fig={p2}
           mode={props.mode}
