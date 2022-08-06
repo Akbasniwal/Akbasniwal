@@ -25,7 +25,7 @@ export default function ProjectCard(props) {
           tabIndex="1"
           role="button"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           Go to project
         </a>
@@ -35,7 +35,7 @@ export default function ProjectCard(props) {
           tabIndex="1"
           role="button"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           code
         </a>
