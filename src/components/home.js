@@ -7,6 +7,7 @@ import {
   SiCodeforces,
   SiInstagram,
   SiGithub,
+  SiLeetcode,
 } from "react-icons/si";
 import { Header } from "semantic-ui-react";
 import TypeWriter from "./typewriter";
@@ -44,6 +45,19 @@ export default function Home(props) {
                   target="_blank"
                 >
                   <FaTwitter
+                    color={props.mode === "dark" ? "white" : "black"}
+                    size={30}
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noreferrer"
+                  href="https://leetcode.com/Akbasniwal/"
+                  className="p-2 hvr"
+                  target="_blank"
+                >
+                  <FaLeetcode
                     color={props.mode === "dark" ? "white" : "black"}
                     size={30}
                   />
