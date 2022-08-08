@@ -5,14 +5,14 @@ export default function ProjectCard(props) {
     <div
       className={`card mb-3 my-3 mx-3`}
       style={{
-        minWidth: "350px",
-        maxWidth: "450px",
+        minWidth: "300px",
+        maxWidth: "540px",
         backgroundColor: props.mode === "dark" ? "black" : "white",
       }}
     >
       <img
         src={props.fig}
-        style={{ minWidth: "300px", maxWidth: "450px" }}
+        style={{ minWidth: "300px", maxWidth: "540px" }}
         className="img-fluid rounded-start"
         alt="..."
       />
