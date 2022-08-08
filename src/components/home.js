@@ -12,8 +12,6 @@ import {
 import { Header } from "semantic-ui-react";
 import TypeWriter from "./typewriter";
 
-console.log(window.innerWidth);
-
 export default function Home(props) {
   return (
     <div
