@@ -12,6 +12,8 @@ import {
 import { Header } from "semantic-ui-react";
 import TypeWriter from "./typewriter";
 
+console.log(window.innerWidth);
+
 export default function Home(props) {
   return (
     <div
@@ -46,7 +48,7 @@ export default function Home(props) {
                 >
                   <FaTwitter
                     color={props.mode === "dark" ? "white" : "black"}
-                    size={30}
+                    size={window.innerWidth < 500 ? 20 : 30}
                   />
                 </a>
               </li>
@@ -59,7 +61,7 @@ export default function Home(props) {
                 >
                   <SiLeetcode
                     color={props.mode === "dark" ? "white" : "black"}
-                    size={30}
+                    size={window.innerWidth < 500 ? 20 : 30}
                   />
                 </a>
               </li>
@@ -72,7 +74,7 @@ export default function Home(props) {
                 >
                   <SiInstagram
                     color={props.mode === "dark" ? "white" : "black"}
-                    size={30}
+                    size={window.innerWidth < 500 ? 20 : 30}
                   />
                 </a>
               </li>
@@ -85,7 +87,7 @@ export default function Home(props) {
                 >
                   <SiGithub
                     color={props.mode === "dark" ? "white" : "black"}
-                    size={30}
+                    size={window.innerWidth < 500 ? 20 : 30}
                   />
                 </a>
               </li>
@@ -98,7 +100,7 @@ export default function Home(props) {
                 >
                   <SiCodechef
                     color={props.mode === "dark" ? "white" : "black"}
-                    size={30}
+                    size={window.innerWidth < 500 ? 20 : 30}
                   />
                 </a>
               </li>
@@ -111,7 +113,7 @@ export default function Home(props) {
                 >
                   <FaHackerrank
                     color={props.mode === "dark" ? "white" : "black"}
-                    size={30}
+                    size={window.innerWidth < 500 ? 20 : 30}
                   />
                 </a>
               </li>
@@ -124,7 +126,7 @@ export default function Home(props) {
                 >
                   <SiCodeforces
                     color={props.mode === "dark" ? "white" : "black"}
-                    size={30}
+                    size={window.innerWidth < 500 ? 20 : 30}
                   />
                 </a>
               </li>
@@ -137,7 +139,7 @@ export default function Home(props) {
                 >
                   <FiLinkedin
                     color={props.mode === "dark" ? "white" : "black"}
-                    size={30}
+                    size={window.innerWidth < 500 ? 20 : 30}
                   />
                 </a>
               </li>
