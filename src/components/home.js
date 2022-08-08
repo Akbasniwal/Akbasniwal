@@ -57,7 +57,7 @@ export default function Home(props) {
                   className="p-2 hvr"
                   target="_blank"
                 >
-                  <FaLeetcode
+                  <SiLeetcode
                     color={props.mode === "dark" ? "white" : "black"}
                     size={30}
                   />
