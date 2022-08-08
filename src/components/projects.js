@@ -7,7 +7,7 @@ import p3 from "../images/p3.gif";
 function Projects(props) {
   return (
     <div>
-      <div className="card-group mb-3 d-flex flex-row justify-content-center">
+      <div className="projectcard card-group mb-3 d-flex justify-content-center">
         <ProjectCard
           title="Tic Tac Toe"
           content={
