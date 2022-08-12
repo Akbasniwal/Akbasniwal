@@ -37,6 +37,10 @@ html{
   padding: 5px;
   width: fit-content;
 }
+.set{
+  width: 35rem;
+  max-width: 500px;
+}
 @media screen and (max-width: 600px) {
   .projectcard ,.grp{
     display: flex;
@@ -44,15 +48,13 @@ html{
     justify-content: center;
   }
   .section{
-    width: 550px;
+    width: 330px;
   }
   .set{
-    width: 300px;
+    max-width: 300px;
   }
 }
-.set{
-  width: 32rem;
-}
+
 .my-animation{
   animation: my-ani 1s ease-in;
   animation-delay: -0.25s;
