@@ -102,13 +102,13 @@ const ProgressExampleColor = () => (
       </div>
     </div>
     <div className="mx-5">
-      Assembly
+      MySql
       <div className="progress my-3 set">
         <div
           className="progress-bar bg-success my-animation"
           style={{ width: "90%", fontWeight: "bolder" }}
         >
-          75%
+          85%
         </div>
       </div>
     </div>
