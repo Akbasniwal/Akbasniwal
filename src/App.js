@@ -1,7 +1,7 @@
 import Navbar from "./components/navbar";
 import Home from "./components/home";
 import Footers from "./components/footer";
-import About from "./components/about";
+import Resume from "./components/resume";
 import React, { useState } from "react";
 import Section2 from "./components/section2";
 import "./App.css";
@@ -37,7 +37,7 @@ function App() {
             </>
           }
         ></Route>
-        <Route path="/about" element={<About mode={mode} />}></Route>
+        <Route path="/resume" element={<Resume mode={mode} />}></Route>
       </Routes>
       <Footers />
     </Router>

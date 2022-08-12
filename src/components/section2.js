@@ -1,5 +1,6 @@
 import React from "react";
 import Projects from "./projects";
+import SkillBar from "./skillbar";
 
 function Section2(props) {
   return (
@@ -39,7 +40,7 @@ function Section2(props) {
             aria-controls="profile-tab-pane"
             aria-selected="false"
           >
-            Profile
+            Skills
           </button>
         </li>
       </ul>
@@ -65,12 +66,7 @@ function Section2(props) {
           aria-labelledby="profile-tab"
           tabIndex="0"
         >
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            temporibus minus optio error nesciunt deserunt quasi, iure sequi,
-            ipsum dolore blanditiis. Natus, optio? Aliquam eos fuga, asperiores
-            tempora laborum aliquid.
-          </p>
+          <SkillBar mode="mode" />
         </div>
       </div>
     </div>

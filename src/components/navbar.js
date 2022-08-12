@@ -5,6 +5,11 @@ export default function Navbar(props) {
     <div>
       <nav
         className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
+        style={{
+          borderBottom: `1px solid ${
+            props.mode === "dark" ? "white" : "black"
+          }`,
+        }}
       >
         <div className="container-fluid">
           <button
@@ -25,7 +30,7 @@ export default function Navbar(props) {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <Link className="nav-link" aria-current="page" to="/">
                   Home
                 </Link>
               </li>
@@ -35,8 +40,8 @@ export default function Navbar(props) {
                 </a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                  About me
+                <Link className="nav-link" to="/resume">
+                  Resume
                 </Link>
               </li>
             </ul>

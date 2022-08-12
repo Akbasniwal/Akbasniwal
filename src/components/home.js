@@ -22,7 +22,7 @@ export default function Home(props) {
         border: `1px solid ${props.mode === "dark" ? "white" : "black"}`,
         borderRadius: "5px",
         padding: "5px",
-        height: "580px",
+        height: "570px",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -31,7 +31,7 @@ export default function Home(props) {
       <div className="center">
         <center>
           <h3>Profile</h3>
-          <Header className="my-5" as="h2" icon textAlign="center">
+          <Header className="my-3" as="h2" icon textAlign="center">
             <FaUserSecret size={150} />
           </Header>
           <TypeWriter />

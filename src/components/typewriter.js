@@ -9,13 +9,13 @@ export default function Typewriter() {
         <TypeWriter
           onInit={(typewriter) => {
             typewriter.start();
-            for (let x = 0; x < 30; x++) {
+            for (let x = 0; x < 20; x++) {
               typewriter
                 .typeString("I'm Akbasniwal")
-                .pauseFor(500)
+                .pauseFor(1000)
                 .deleteAll()
                 .typeString("Frontend Devloper")
-                .pauseFor(500)
+                .pauseFor(1000)
                 .deleteAll()
                 .typeString("Competitive coder")
                 .deleteAll();
