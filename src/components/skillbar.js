@@ -1,7 +1,7 @@
 import React from "react";
 
 const ProgressExampleColor = () => (
-  <div className="d-flex flex-direction-column justify-content-center card-group my-3">
+  <div className="d-flex justify-content-center card-group my-3 grp">
     <div className="mx-5">
       Python
       <div className="progress my-3 set">
