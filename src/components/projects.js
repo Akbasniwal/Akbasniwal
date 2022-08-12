@@ -10,8 +10,9 @@ function Projects(props) {
       <div className="projectcard card-group mb-3 d-flex justify-content-center">
         <ProjectCard
           title="Tic Tac Toe"
+          tags={["ReactJs", "CSS"]}
           content={
-            "Tic-tac-toe , noughts and crosses, or X's and O's is a paper-and-pencil game for two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner."
+            "Tic-tac-toe X's and O's is a game for two players on a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner."
           }
           link={"https://react1-delta-lake.vercel.app/"}
           code={"https://github.com/Akbasniwal/react1"}
@@ -20,8 +21,9 @@ function Projects(props) {
         />
         <ProjectCard
           title="Password Validate"
+          tags={["HTML", "CSS", "JavaScript"]}
           content={
-            "Password validate is basic sign in feature for any website which tests streangth of password and checks if provided emial is valid is any of the sections does not satisfy eligibility of proposed criteria, on submit it will show error and show in what section It's having error."
+            "Password validate is basic sign in feature for any website which tests streangth of password and checks if provided email is valid is any of the sections does not satisfy eligibility of proposed criteria."
           }
           link={"http://validate-password.vercel.app/"}
           code={"https://github.com/Akbasniwal/Validate-password"}
@@ -30,8 +32,9 @@ function Projects(props) {
         />
         <ProjectCard
           title="Clock"
+          tags={["HTML", "CSS", "JavaScript"]}
           content={
-            "Tic-tac-toe , noughts and crosses, or X's and O's is a paper-and-pencil game for two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner."
+            "Basic clock with 3 heads hour,minute and second using html,css and js."
           }
           link={"https://akbasniwal.github.io/Sclock/"}
           code={"https://github.com/Akbasniwal/Sclock"}
