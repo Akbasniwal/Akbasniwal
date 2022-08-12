@@ -25,7 +25,7 @@ function Resume(props) {
           <div className="content">
             <div className="line">Resume</div>
             <h2 style={{ fontWeight: "bolder" }}>CHECK MY RESUME</h2>
-            <a href="../Resume(Akbasniwal).pdf">
+            <a href="../akbasniwal.pdf">
               <BsFileArrowDownFill color="green" size={50} />
             </a>
           </div>
