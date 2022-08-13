@@ -28,9 +28,12 @@ html{
 .top{
   padding-left: 5px;
 }
- .section{
+.section{
   width: 500px;
 } 
+.sec{
+  width: 450px;
+}
 .tag{
   font-family: Georgia, 'Times New Roman', Times, serif;
   background-color: rgba(209, 196, 196, 0.191);
@@ -48,7 +51,12 @@ html{
     justify-content: center;
   }
   .section{
-    width: 330px;
+    width: 300px;
+    flex-wrap: wrap;
+  }
+  .sec{
+    width: 300px;
+    flex-wrap: wrap;
   }
   .set{
     max-width: 250px;

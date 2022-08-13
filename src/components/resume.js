@@ -12,9 +12,9 @@ function Resume(props) {
         props.mode === "dark" ? "white" : "black"
       } my-3 d-flex justify-content-center card-group grp`}
     >
-      <div className="d-flex section my-3">
+      <div className="d-flex section my-3 mx-2">
         <div className="circle"></div>
-        <span
+        <div
           className="top mx-2"
           style={{
             zIndex: 10,
@@ -22,16 +22,16 @@ function Resume(props) {
             paddingLeft: "20px",
           }}
         >
+          <h4 className="line">Resume</h4>
           <div className="content">
-            <div className="line">Resume</div>
             <h2 style={{ fontWeight: "bolder" }}>CHECK MY RESUME</h2>
             <a href="../akbasniwal.pdf">
               <BsFileArrowDownFill color="green" size={50} />
             </a>
           </div>
-        </span>
+        </div>
       </div>
-      <div className="d-flex section my-3 mx-3">
+      <div className="d-flex section my-3 mx-2">
         <div className="circle"></div>
         <span
           className="top mx-2"
@@ -50,7 +50,7 @@ function Resume(props) {
           </div>
         </span>
       </div>
-      <div className="d-flex section my-3">
+      <div className="d-flex section my-3 mx-2">
         <div className="circle"></div>
         <span
           className="top mx-2"
@@ -82,7 +82,7 @@ function Resume(props) {
           </div>
         </span>
       </div>
-      <div className="d-flex section my-3 mx-3">
+      <div className="d-flex section my-3 mx-2">
         <div className="circle"></div>
         <span
           className="top mx-2"
@@ -116,7 +116,7 @@ function Resume(props) {
           </div>
         </span>
       </div>
-      <div className="d-flex section my-3 mx-3">
+      <div className="d-flex section my-3 mx-2">
         <div className="circle"></div>
         <span
           className="top mx-2"
@@ -233,7 +233,7 @@ function Resume(props) {
           </div>
         </span>
       </div>
-      <div className="d-flex section my-3 mx-3">
+      <div className="d-flex section my-3 mx-2">
         <div className="circle"></div>
         <span
           className="top mx-2"
