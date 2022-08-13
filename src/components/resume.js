@@ -17,7 +17,7 @@ function Resume(props) {
         <div
           className="top mx-2"
           style={{
-            zIndex: 10,
+            zIndex: "10",
             borderLeft: `2px solid grey`,
             paddingLeft: "20px",
           }}
