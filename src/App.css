@@ -9,7 +9,7 @@ html{
 .circle{
   z-index: 100;
   position: absolute;
-  margin-right: 15px;
+  margin-left: 1px;
   height: 15px;
   width: 15px;
   border-radius: 50%;
