@@ -10,11 +10,11 @@ export default function Upscroller(props) {
         left: "30px",
         zIndex: "100",
       }}
-      className={`text-${props.mode === "dark" ? "white" : "dark"}`}
     >
       <a href="#">
         <FaRegArrowAltCircleUp
           style={{
+            backgroundColor: `${props.mode === "dark" ? "#323232" : "white"}`,
             color: `${props.mode === "dark" ? "white" : "black"}`,
             borderRadius: "50%",
           }}

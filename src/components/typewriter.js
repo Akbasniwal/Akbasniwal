@@ -5,7 +5,7 @@ export default function Typewriter() {
   return (
     <div className="my-3">
       <h3>Abhishek kumar basniwal</h3>
-      <h5>
+      <h4 style={{ fontWeight: "bold" }}>
         <TypeWriter
           onInit={(typewriter) => {
             typewriter.start();
@@ -22,7 +22,7 @@ export default function Typewriter() {
             }
           }}
         />
-      </h5>
+      </h4>
     </div>
   );
 }

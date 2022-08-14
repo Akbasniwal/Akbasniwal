@@ -5,7 +5,7 @@ import Contact from "./components/contact/contact";
 import Resume from "./components/resume";
 import React, { useState } from "react";
 import Section2 from "./components/section2";
-import Upscroller from "./upscroller";
+import Upscroller from "./components/upscroller";
 
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
