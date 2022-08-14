@@ -17,9 +17,10 @@ export default function Home(props) {
     <div
       className={`bg-${props.mode} text-${
         props.mode === "dark" ? "white" : "black"
-      } my-5`}
+      } mx-3`}
       style={{
-        border: `1px solid ${props.mode === "dark" ? "white" : "black"}`,
+        marginTop: "60px",
+        // border: `1px solid ${props.mode === "dark" ? "white" : "black"}`,
         borderRadius: "5px",
         padding: "5px",
         height: "570px",

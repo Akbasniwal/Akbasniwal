@@ -5,12 +5,6 @@ import emailjs from "emailjs-com";
 export default function Contact(props) {
   function sendEmail(e) {
     e.preventDefault();
-    emailjs.sendForm(
-      "service_a5ww9hh",
-      "template_p3w7508",
-      e.target,
-      "bxgF_fw2w_lPO7EfE"
-    );
     emailjs
       .sendForm(
         "service_a5ww9hh",
@@ -21,6 +15,12 @@ export default function Contact(props) {
       .then(
         (result) => {
           window.location.reload();
+          emailjs.sendForm(
+            "service_a5ww9hh",
+            "template_p3w7508",
+            e.target,
+            "bxgF_fw2w_lPO7EfE"
+          );
           alert("I have received your message.Thank you");
         },
         (error) => {
@@ -62,7 +62,7 @@ export default function Contact(props) {
             style={{
               backgroundColor: `${props.mode === "dark" ? "#323232" : "white"}`,
             }}
-            className={`in mx-3 text-${
+            className={`in my-3 mx-3 text-${
               props.mode === "dark" ? "white" : "black"
             }`}
           />
@@ -74,7 +74,7 @@ export default function Contact(props) {
             style={{
               backgroundColor: `${props.mode === "dark" ? "#323232" : "white"}`,
             }}
-            className={`in mx-3 text-${
+            className={`in my-3 mx-3 text-${
               props.mode === "dark" ? "white" : "black"
             }`}
           />
@@ -86,7 +86,7 @@ export default function Contact(props) {
               width: "100%",
               backgroundColor: `${props.mode === "dark" ? "#323232" : "white"}`,
             }}
-            className={`in mx-3 mb-8 text-${
+            className={`in mx-3 my-3 mb-8 text-${
               props.mode === "dark" ? "white" : "black"
             }`}
             rows="8"
@@ -100,7 +100,7 @@ export default function Contact(props) {
               width: "100%",
               backgroundColor: `${props.mode === "dark" ? "#323232" : "white"}`,
             }}
-            className={`in mx-3 text-${
+            className={`in mx-3 my-3 text-${
               props.mode === "dark" ? "white" : "black"
             }`}
             rows="8"
