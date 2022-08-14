@@ -1,10 +1,12 @@
-import Navbar from "./components/navbar";
+import Navbar from "./components/navbar/navbar";
 import Home from "./components/home";
 import Footers from "./components/footer";
 import Contact from "./components/contact/contact";
 import Resume from "./components/resume";
 import React, { useState } from "react";
 import Section2 from "./components/section2";
+import Upscroller from "./upscroller";
+
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -24,6 +26,7 @@ function App() {
   return (
     <Router>
       <Navbar mode={mode} change={ThemeHandler} />
+      <Upscroller mode={mode} />
       <Routes>
         <Route
           path="/"

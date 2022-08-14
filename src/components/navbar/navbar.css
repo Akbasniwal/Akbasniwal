@@ -1,0 +1,7 @@
+.ul-hvr li a{
+    font-size: larger;
+    margin-left: 10px;
+}
+.ul-hvr li a:hover{
+    font-weight: bolder;
+}

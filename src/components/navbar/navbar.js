@@ -1,4 +1,5 @@
 import React from "react";
+import "./navbar.css";
 import { Link } from "react-router-dom";
 export default function Navbar(props) {
   return (
@@ -24,11 +25,11 @@ export default function Navbar(props) {
             <span className="navbar-toggler-icon"></span>
           </button>
           <Link className="navbar-brand centerText" to="/">
-            <h4>Akbasniwal</h4>
+            <h3 style={{ fontWeight: "bolder", margin: "0px" }}>AK.Basniwal</h3>
           </Link>
           <div></div>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 ul-hvr">
               <li className="nav-item">
                 <Link className="nav-link" aria-current="page" to="/">
                   Home
