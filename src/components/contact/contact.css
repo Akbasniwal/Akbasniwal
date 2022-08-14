@@ -1,0 +1,23 @@
+input,textarea {
+  padding: 7px;
+}
+textarea {
+  min-height: 50px;
+  max-height: 350px;
+}
+.in {
+  border-color: transparent;
+  margin: 10px;
+  width: 45%;
+}
+form {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+  .in {
+    width: 100%;
+  }
+}

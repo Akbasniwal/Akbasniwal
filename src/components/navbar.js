@@ -40,6 +40,11 @@ export default function Navbar(props) {
                 </a>
               </li>
               <li className="nav-item">
+                <a className="nav-link" href="./#contact">
+                  Contact
+                </a>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" to="/resume">
                   Resume
                 </Link>

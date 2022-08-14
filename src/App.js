@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar";
 import Home from "./components/home";
 import Footers from "./components/footer";
+import Contact from "./components/contact/contact";
 import Resume from "./components/resume";
 import React, { useState } from "react";
 import Section2 from "./components/section2";
@@ -33,6 +34,9 @@ function App() {
               </div>
               <div className="my-5" id="projects">
                 <Section2 mode={mode} />
+              </div>
+              <div className="my-5" id="contact">
+                <Contact mode={mode} />
               </div>
             </>
           }
