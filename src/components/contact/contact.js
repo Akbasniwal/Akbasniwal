@@ -108,11 +108,16 @@ export default function Contact(props) {
           <button
             type="submit"
             value={"send"}
-            className="my-3 mx-5 btn btn-success"
+            className="my-3 btn btn-success"
+            style={{ marginLeft: "40px" }}
           >
             Send Message
           </button>
-          <button type="reset" className="my-3 mx-5 btn btn-success">
+          <button
+            type="reset"
+            className="my-3 btn btn-success"
+            style={{ marginRight: "40px" }}
+          >
             Reset
           </button>
         </form>
