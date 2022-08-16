@@ -81,7 +81,7 @@ export default function Contact(props) {
           <input
             name="subject"
             type={"text"}
-            placeholder="Enter Subject of Meassage"
+            placeholder="Enter Subject of Message"
             style={{
               width: "100%",
               backgroundColor: `${props.mode === "dark" ? "#323232" : "white"}`,
