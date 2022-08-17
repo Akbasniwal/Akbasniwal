@@ -5,3 +5,13 @@
 .ul-hvr li a:hover{
     font-weight: bolder;
 }
+.toggler{
+    border: none;
+    background-color: inherit;
+}
+@media screen and (min-width: 992px) {
+    .toggler{
+        position: absolute;
+        visibility: hidden;
+    }
+}
