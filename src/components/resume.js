@@ -98,7 +98,7 @@ function Resume(props) {
             <div className="tag">2020-present</div>
             Malviya National institute of technology, Jaipur
             <br />
-            CGPA-8.3
+            CGPA-8.37
             <br />
             <br />
             <h4>Senior Secondary (XII)</h4>
