@@ -5,6 +5,9 @@ textarea {
   min-height: 50px;
   max-height: 350px;
 }
+input:focus,textarea:focus{
+  outline: none;
+}
 .in {
   border-color: transparent;
   width: 45%;
