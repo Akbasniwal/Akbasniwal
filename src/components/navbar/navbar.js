@@ -32,7 +32,7 @@ export default class Navbar extends Component {
     return (
       <div>
         <nav
-          className={`navbar navbar-expand-lg navbar-${this.props.mode} bg-${this.props.mode}`}
+          className={`menubar navbar navbar-expand-lg navbar-${this.props.mode} bg-${this.props.mode}`}
           style={{
             borderBottom: `1px solid ${
               this.props.mode === "dark" ? "white" : "black"

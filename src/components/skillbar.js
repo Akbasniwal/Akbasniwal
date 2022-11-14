@@ -95,7 +95,7 @@ const ProgressExampleColor = () => (
       <div className="progress my-3 set">
         <div
           className="progress-bar bg-success my-animation"
-          style={{ width: "90%", fontWeight: "bolder" }}
+          style={{ width: "75%", fontWeight: "bolder" }}
         >
           75%
         </div>
@@ -106,7 +106,7 @@ const ProgressExampleColor = () => (
       <div className="progress my-3 set">
         <div
           className="progress-bar bg-success my-animation"
-          style={{ width: "90%", fontWeight: "bolder" }}
+          style={{ width: "85%", fontWeight: "bolder" }}
         >
           85%
         </div>

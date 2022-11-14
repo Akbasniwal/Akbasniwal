@@ -20,7 +20,7 @@ export default function ProjectCard(props) {
         <h5 className="card-title">{props.title}</h5>
         <div className="d-flex card-group">
           {props.tags.map((tag) => (
-            <div className="tag mx-1">{tag}</div>
+            <div className="tag mx-1 my-1">{tag}</div>
           ))}
         </div>
         <p className="card-text">{props.content}</p>

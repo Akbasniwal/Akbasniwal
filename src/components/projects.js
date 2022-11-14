@@ -2,7 +2,7 @@ import React from "react";
 import ProjectCard from "./projectCard";
 import p1 from "../images/p1.gif";
 import p2 from "../images/p2.jpeg";
-import p3 from "../images/p3.gif";
+import p3 from "../images/doctapp.jpeg";
 
 function Projects(props) {
   return (
@@ -31,13 +31,13 @@ function Projects(props) {
           mode={props.mode}
         />
         <ProjectCard
-          title="Clock"
-          tags={["HTML", "CSS", "JavaScript"]}
+          title="DoctApp"
+          tags={["HTML", "CSS", "JavaScript","Django","Database"]}
           content={
-            "Basic clock with 3 heads hour,minute and second using html,css and js."
+            "Online Application for booking appointments for patients by searching appropriate doctor in list according to thier specialization of doctors."
           }
-          link={"https://akbasniwal.github.io/Sclock/"}
-          code={"https://github.com/Akbasniwal/Sclock"}
+          link={null}
+          code={"https://github.com/Akbasniwal/DoctApp"}
           fig={p3}
           mode={props.mode}
         />

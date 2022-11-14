@@ -76,9 +76,9 @@ function Resume(props) {
             <h5>Platforms</h5>
             <Skill skillset={["Unix", "git", "vercel", "linux", "windows"]} />
             <h5>Frameworks</h5>
-            <Skill skillset={["ReactJs"]} />
-            <h5>Datbase</h5>
-            <Skill skillset={["MySql"]} />
+            <Skill skillset={["ReactJs","Tkinter","Django","NodeJs"]} />
+            <h5>Database</h5>
+            <Skill skillset={["MySql","PL Sql"]} />
           </div>
         </span>
       </div>
