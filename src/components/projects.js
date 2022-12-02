@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "./projectCard";
-import p1 from "../images/p1.gif";
+import p1 from "../images/pmanage.png";
 import p2 from "../images/p2.jpeg";
 import p3 from "../images/doctapp.jpeg";
 
@@ -9,13 +9,13 @@ function Projects(props) {
     <div>
       <div className="projectcard card-group mb-3 d-flex justify-content-center">
         <ProjectCard
-          title="Tic Tac Toe"
+          title="Project Management System"
           tags={["ReactJs", "CSS"]}
           content={
-            "Tic-tac-toe X's and O's is a game for two players on a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner."
+            "The goal of this project is to provide a user-friendly web solution that will aid in the administration and compilation of work for a wide range of project management users.           Businesses may manage their projects by dividing them up into smaller tasks that can be given to individuals and tracked in real-time"
           }
-          link={"https://react1-delta-lake.vercel.app/"}
-          code={"https://github.com/Akbasniwal/react1"}
+          link={null}
+          code={"https://github.com/Penzoid/Project-Management-DBMS"}
           fig={p1}
           mode={props.mode}
         />
@@ -32,7 +32,7 @@ function Projects(props) {
         />
         <ProjectCard
           title="DoctApp"
-          tags={["HTML", "CSS", "JavaScript","Django","Database"]}
+          tags={["HTML", "CSS", "JavaScript", "Django", "Database"]}
           content={
             "Online Application for booking appointments for patients by searching appropriate doctor in list according to thier specialization of doctors."
           }
