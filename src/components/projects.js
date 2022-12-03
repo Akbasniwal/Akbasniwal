@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectCard from "./projectCard";
 import p1 from "../images/pmanage.png";
-import p2 from "../images/p2.jpeg";
-import p3 from "../images/doctapp.jpeg";
+import p2 from "../images/p2.png";
+import p3 from "../images/doctapp.png";
 
 function Projects(props) {
   return (
