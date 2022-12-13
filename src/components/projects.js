@@ -10,7 +10,7 @@ function Projects(props) {
       <div className="projectcard card-group mb-3 d-flex justify-content-center">
         <ProjectCard
           title="Project Management System"
-          tags={["ReactJs", "CSS"]}
+          tags={["ReactJs", "CSS", "NodeJs", "MySql"]}
           content={
             "The goal of this project is to provide a user-friendly web solution that will aid in the administration and compilation of work for a wide range of project management users.           Businesses may manage their projects by dividing them up into smaller tasks that can be given to individuals and tracked in real-time"
           }
@@ -32,9 +32,9 @@ function Projects(props) {
         />
         <ProjectCard
           title="DoctApp"
-          tags={["HTML", "CSS", "JavaScript", "Django", "Database"]}
+          tags={["HTML", "CSS", "JavaScript", "Django", "Mysql"]}
           content={
-            "Online Application for booking appointments for patients by searching appropriate doctor in list according to thier specialization of doctors."
+            "Online Application for booking appointments for patients by searching appropriate doctor in list according to thier specialization of doctors.Doctors can approve or reject these appointments and admin can add doctors and see all the details of the database."
           }
           link={null}
           code={"https://github.com/Akbasniwal/DoctApp"}

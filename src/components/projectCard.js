@@ -16,7 +16,7 @@ export default function ProjectCard(props) {
         className="img-fluid rounded-start"
         alt="..."
       />
-      <div className="card-body">
+      <div className="card-body" style={{ paddingBottom: "50px" }}>
         <h5 className="card-title">{props.title}</h5>
         <div className="d-flex card-group">
           {props.tags.map((tag) => (
@@ -24,26 +24,28 @@ export default function ProjectCard(props) {
           ))}
         </div>
         <p className="card-text">{props.content}</p>
-        <a
-          href={props.link}
-          className="btn btn-primary mx-3"
-          tabIndex="1"
-          role="button"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Go to project
-        </a>
-        <a
-          href={props.code}
-          className="btn btn-primary mx-3"
-          tabIndex="1"
-          role="button"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          code
-        </a>
+        <div style={{ position: "absolute", bottom: "10px" }}>
+          <a
+            href={props.link}
+            className="btn btn-primary mx-3"
+            tabIndex="1"
+            role="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Go to project
+          </a>
+          <a
+            href={props.code}
+            className="btn btn-primary mx-3"
+            tabIndex="1"
+            role="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            code
+          </a>
+        </div>
       </div>
     </div>
   );
