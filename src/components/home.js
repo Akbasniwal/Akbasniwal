@@ -15,15 +15,9 @@ import TypeWriter from "./typewriter";
 export default function Home(props) {
   return (
     <div
-      className={`bg-${props.mode} text-${
-        props.mode === "dark" ? "white" : "black"
-      } mx-3`}
+      className={`text-${props.mode === "dark" ? "white" : "black"} mx-3 base`}
       style={{
-        marginTop: "60px",
-        // border: `1px solid ${props.mode === "dark" ? "white" : "black"}`,
-        borderRadius: "5px",
-        padding: "5px",
-        height: "570px",
+        background: "transparent",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -31,7 +25,7 @@ export default function Home(props) {
     >
       <div className="center">
         <center>
-          <h3>Profile</h3>
+          <h1>Abhishek kumar basniwal</h1>
           <Header className="my-3" as="h2" icon textAlign="center">
             <FaUserSecret size={150} />
           </Header>

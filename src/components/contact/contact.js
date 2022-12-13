@@ -38,7 +38,7 @@ export default function Contact(props) {
       <div className="container my-3">
         <h1
           style={{
-            marginBottom: "20px",
+            margin: "50px",
             textAlign: "center",
             fontWeight: "bolder",
             fontFamily: "sans-serif",

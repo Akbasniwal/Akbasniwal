@@ -7,13 +7,13 @@ function Section2(props) {
     <div
       style={{
         borderTop: `2px ${props.mode === "dark" ? "white" : "black"} solid`,
-        paddingTop: "20px",
       }}
     >
       <ul
         className={`nav container nav-${props.mode} nav-tabs`}
         id="myTab"
         role="tablist"
+        style={{ paddingTop: "80px" }}
       >
         <li className={`nav-item`} role="presentation">
           <button
@@ -47,7 +47,7 @@ function Section2(props) {
       <div
         className={`tab-content container text-${
           props.mode === "dark" ? "white" : "black"
-        }`}
+        } my-5`}
         id="myTabContent"
       >
         <div

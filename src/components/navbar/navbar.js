@@ -30,9 +30,9 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <nav
-          className={`menubar navbar navbar-expand-lg navbar-${this.props.mode} bg-${this.props.mode}`}
+          className={`menubar navbar navbar-expand-lg navbar-${this.props.mode} bg-${this.props.mode} sticky-top`}
           style={{
             borderBottom: `1px solid ${
               this.props.mode === "dark" ? "white" : "black"
@@ -64,7 +64,7 @@ export default class Navbar extends Component {
             <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 ul-hvr">
                 <li className="nav-item">
-                  <Link className="nav-link" aria-current="page" to="/">
+                  <Link className="nav-link" aria-current="page" to="./#">
                     Home
                   </Link>
                 </li>
@@ -96,7 +96,7 @@ export default class Navbar extends Component {
             </div>
           </div>
         </nav>
-      </div>
+      </>
     );
   }
 }

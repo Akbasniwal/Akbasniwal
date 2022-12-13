@@ -4,7 +4,6 @@ import TypeWriter from "typewriter-effect";
 export default function Typewriter() {
   return (
     <div className="my-3">
-      <h3>Abhishek kumar basniwal</h3>
       <h4 style={{ fontWeight: "bold" }}>
         <TypeWriter
           onInit={(typewriter) => {
