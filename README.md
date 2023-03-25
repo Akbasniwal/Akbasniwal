@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Abhishek kumar basniwal (Akbasniwal)</h1>
 <h3 align="center">A passionate frontend developer and Competetive coder from India</h3>
 
-- 👨‍💻 All of my projects are available at [https://akbasniwal.vercel.app/](https://akbasniwal.vercel.app/)
+- 👨‍💻 All of my projects are available at [https://akbasniwal.github.io/](https://akbasniwal.vercel.app/)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
