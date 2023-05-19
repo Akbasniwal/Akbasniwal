@@ -107,6 +107,7 @@ export default function Resume() {
                         <a
                           href="https://cryptohack.org/user/Ak_basniwal/"
                           target="_blank"
+                          rel="noreferrer"
                           style={{ color: "#ffffff" }}
                         >
                           CryptoHack
@@ -117,6 +118,7 @@ export default function Resume() {
                         <a
                           href="https://app.hackthebox.com/profile/1414782"
                           target="_blank"
+                          rel="noreferrer"
                           style={{ color: "#ffffff" }}
                         >
                           HackTheBox
