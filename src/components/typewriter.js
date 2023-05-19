@@ -51,9 +51,9 @@ export default function TypeWriter() {
   }
 
   return (
-    <h4 className="text-center">
+    <h5 className="text-center">
       I am <span className="type-text">{text}</span>
       <span className="cursor" />
-    </h4>
+    </h5>
   );
 }
