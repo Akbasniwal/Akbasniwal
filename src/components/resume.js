@@ -1,265 +1,217 @@
 import React from "react";
-import { BsFileArrowDownFill } from "react-icons/bs";
-import "../App.css";
-import Skill from "./skills";
-import { FaHackerrank } from "react-icons/fa";
-import { SiCodechef, SiCodeforces, SiGithub, SiLeetcode } from "react-icons/si";
+import SocialApps from "./social-apps";
+import "./resume.css";
 
-function Resume(props) {
+function Block({ title }) {
+  return <div className="block">{title}</div>;
+}
+
+export default function Resume() {
   return (
-    <div
-      className={`container text-${
-        props.mode === "dark" ? "white" : "black"
-      } my-3 d-flex justify-content-center card-group grp`}
-    >
-      <div className="d-flex section my-3 mx-2">
-        <div className="circle"></div>
+    <>
+      <div>
         <div
-          className="top mx-2"
-          style={{
-            zIndex: "10",
-            borderLeft: `2px solid grey`,
-            paddingLeft: "20px",
-          }}
+          className="container"
+          style={{ background: "#000000e0", color: "white" }}
         >
-          <h4 className="line">Resume</h4>
-          <div className="content">
-            <h2 style={{ fontWeight: "bolder" }}>CHECK MY RESUME</h2>
-            <a href="../akbasniwal.pdf">
-              <BsFileArrowDownFill color="green" size={50} />
-            </a>
+          <div className="row">
+            <div className="flex-row justify-content-space-around">
+              <h2>AkBasniwal</h2>
+              <h3>
+                <a href="https://github.com/Akbasniwal">@AkBasniwal</a>
+              </h3>
+            </div>
+            <div>
+              <p
+                style={{
+                  margin: "10px",
+                  fontSize: "1.2rem",
+                  fontWeight: "400",
+                  lineHeight: "1.5",
+                  textAlign: "center",
+                }}
+              >
+                I am AkBasniwal,a 3rd year undergraduate student at MNIT Jaipur
+                and a full stack developer,competitive coder,CyberSecurity
+                Enthusiast.
+              </p>
+              <SocialApps />
+              <center>
+                <a href={"../akBasniwal.pdf"} target="_blank" rel="noreferrer">
+                  <button className="download-btn">Download CV</button>
+                </a>
+              </center>
+            </div>
+            <div className="line" />
+            <div className="resumebox">
+              <div className="flex-column box">
+                <div className="edu">
+                  <Block title="Education" />
+                  <ul>
+                    <li>
+                      <span>Matriculation - X</span>
+                      <br />
+                      <small>2017-2018</small>
+                      <br />
+                      <small>RBSE - 92%</small>
+                    </li>
+                    <li>
+                      <span>Senior Secondary - XII</span>
+                      <br />
+                      <small>2019-2020</small>
+                      <br />
+                      <small>CBSE - 95.5%</small>
+                    </li>
+                    <li>
+                      <span>Graduation</span>
+                      <br />
+                      <small>2020-2024</small>
+                      <br />
+                      <small>B.Tech Computer Sciecne MNIT,Jaipur</small>
+                      <br />
+                      <small>CGPA - 8.3</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="flex-column box">
+                <div className="edu">
+                  <Block title="Skills" />
+                  <ul>
+                    <li>
+                      <span>Programming Languages</span>
+                      <br />
+                      <small>
+                        Python, C++, Javascript, HTML, CSS ,Java Basic
+                      </small>
+                    </li>
+                    <li>
+                      <span>Frameworks</span>
+                      <br />
+                      <small>React, Django, Bootstrap ,3Js</small>
+                    </li>
+                    <li>
+                      <span>Tools</span>
+                      <br />
+                      <small>Git, Github, VSCode, Vercel</small>
+                    </li>
+                    <li>
+                      <span>Database</span>
+                      <br />
+                      <small>MySQL, MongoDB</small>
+                    </li>
+                    <li>
+                      <span>Cryptography</span>
+                      <br />
+                      <small>
+                        <a
+                          href="https://cryptohack.org/user/Ak_basniwal/"
+                          target="_blank"
+                          style={{ color: "#ffffff" }}
+                        >
+                          CryptoHack
+                        </a>
+                      </small>
+                      ,
+                      <small>
+                        <a
+                          href="https://app.hackthebox.com/profile/1414782"
+                          target="_blank"
+                          style={{ color: "#ffffff" }}
+                        >
+                          HackTheBox
+                        </a>
+                      </small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="resumebox">
+              <div className="flex-column box skill">
+                <ul>
+                  <li>
+                    <span>Python</span>
+                    <div className="skillbar">
+                      <div className="bar" style={{ width: "90%" }}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>C/Cpp</span>
+                    <div className="skillbar">
+                      <div className="bar" style={{ width: "90%" }}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>CSS</span>
+                    <div className="skillbar">
+                      <div className="bar" style={{ width: "85%" }}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>Javascript</span>
+                    <div className="skillbar">
+                      <div className="bar" style={{ width: "75%" }}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>React</span>
+                    <div className="skillbar">
+                      <div className="bar" style={{ width: "70%" }}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>Django</span>
+                    <div className="skillbar">
+                      <div className="bar" style={{ width: "60%" }}></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div className="flex-column box skill">
+                <ul>
+                  <li>
+                    <span>Bootstrap</span>
+                    <div className="skillbar">
+                      <div className="bar" style={{ width: "80%" }}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>MySQL </span>
+                    <div className="skillbar">
+                      <div className="bar" style={{ width: "85%" }}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>Git</span>
+                    <div className="skillbar">
+                      <div className="bar" style={{ width: "80%" }}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>VSCode</span>
+                    <div className="skillbar">
+                      <div className="bar" style={{ width: "90%" }}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>HTML</span>
+                    <div className="skillbar">
+                      <div className="bar" style={{ width: "80%" }}></div>
+                    </div>
+                  </li>
+                  <li>
+                    <span>Assembly </span>
+                    <div className="skillbar">
+                      <div className="bar" style={{ width: "75%" }}></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="d-flex section my-3 mx-2">
-        <div className="circle"></div>
-        <span
-          className="top mx-2"
-          style={{
-            zIndex: 10,
-            borderLeft: `2px solid grey`,
-            paddingLeft: "20px",
-          }}
-        >
-          <h4 className="line">Examinations</h4>
-          <div className="content">
-            <h4>Jee Mains</h4>
-            <div className="tag my-1">2020</div>
-            <div className="tag my-1">AIR - 5428</div>
-            <div className="tag my-1">Percentile- 99.52</div>
-          </div>
-        </span>
-      </div>
-      <div className="d-flex section my-3 mx-2">
-        <div className="circle"></div>
-        <span
-          className="top mx-2"
-          style={{
-            zIndex: 10,
-            borderLeft: `2px solid grey`,
-            paddingLeft: "20px",
-          }}
-        >
-          <h4 className="line">Skills</h4>
-          <div className="content">
-            <h5>Languages</h5>
-            <Skill
-              skillset={[
-                "JavaScript",
-                "Cpp",
-                "Python",
-                "Scheme",
-                "HTML",
-                "CSS",
-              ]}
-            />
-            <h5>Platforms</h5>
-            <Skill skillset={["Unix", "git", "vercel", "linux", "windows"]} />
-            <h5>Frameworks</h5>
-            <Skill skillset={["ReactJs","Tkinter","Django","NodeJs"]} />
-            <h5>Database</h5>
-            <Skill skillset={["MySql","PL Sql"]} />
-          </div>
-        </span>
-      </div>
-      <div className="d-flex section my-3 mx-2">
-        <div className="circle"></div>
-        <span
-          className="top mx-2"
-          style={{
-            zIndex: 10,
-            borderLeft: `2px solid grey`,
-            paddingLeft: "20px",
-          }}
-        >
-          <h4 className="line">Education</h4>
-          <div className="content">
-            <h4>B.tech Computer-science</h4>
-            <div className="tag">2020-present</div>
-            Malviya National institute of technology, Jaipur
-            <br />
-            CGPA-8.37
-            <br />
-            <br />
-            <h4>Senior Secondary (XII)</h4>
-            <div className="tag">2019-20</div>
-            Govt. boys Sr. Sec. School No.2,Uttam nagar,New delhi
-            <br />
-            Percentage - 95.5%
-            <br />
-            <br />
-            <h4>Matriculation (X)</h4>
-            <div className="tag">2017-18</div>
-            Saraswati Sr. Sec. School ,Hathideh,sikar,Rajasthan
-            <br />
-            Percentage - 92%
-          </div>
-        </span>
-      </div>
-      <div className="d-flex section my-3 mx-2">
-        <div className="circle"></div>
-        <span
-          className="top mx-2"
-          style={{
-            zIndex: 10,
-            borderLeft: `2px solid grey`,
-            paddingLeft: "20px",
-          }}
-        >
-          <h4 className="line">Coding_Profiles</h4>
-          <div className="content">
-            <ul className="navbar-nav mb-3 my-2">
-              <li className="my-2">
-                <a
-                  rel="noreferrer"
-                  href="https://leetcode.com/Akbasniwal/"
-                  className="p-2 hvr"
-                  target="_blank"
-                  style={{ textDecoration: "none" }}
-                >
-                  <span
-                    className="h5 mx-3"
-                    style={{ color: props.mode === "dark" ? "white" : "black" }}
-                  >
-                    Leetcode
-                  </span>
-                  <SiLeetcode
-                    color={props.mode === "dark" ? "white" : "black"}
-                    size={window.innerWidth < 500 ? 20 : 30}
-                  />
-                </a>
-              </li>
-              <li className="my-2">
-                <a
-                  rel="noreferrer"
-                  className="p-2 hvr"
-                  href="https://github.com/Akbasniwal"
-                  target="_blank"
-                  style={{ textDecoration: "none" }}
-                >
-                  <span
-                    className="h5 mx-3"
-                    style={{ color: props.mode === "dark" ? "white" : "black" }}
-                  >
-                    Github
-                  </span>
-                  <SiGithub
-                    color={props.mode === "dark" ? "white" : "black"}
-                    size={window.innerWidth < 500 ? 20 : 30}
-                  />
-                </a>
-              </li>
-              <li className="my-2">
-                <a
-                  rel="noreferrer"
-                  className="p-2 hvr"
-                  href="https://www.codechef.com/users/a_mahakal"
-                  target="_blank"
-                  style={{ textDecoration: "none" }}
-                >
-                  <span
-                    className="h5 mx-3"
-                    style={{ color: props.mode === "dark" ? "white" : "black" }}
-                  >
-                    Codechef
-                  </span>
-                  <SiCodechef
-                    color={props.mode === "dark" ? "white" : "black"}
-                    size={window.innerWidth < 500 ? 20 : 30}
-                  />
-                </a>
-              </li>
-              <li className="my-2">
-                <a
-                  rel="noreferrer"
-                  className="p-2 hvr"
-                  href="https://www.hackerrank.com/2020ucp1821"
-                  target="_blank"
-                  style={{ textDecoration: "none" }}
-                >
-                  <span
-                    className="h5 mx-3"
-                    style={{ color: props.mode === "dark" ? "white" : "black" }}
-                  >
-                    HackerRank
-                  </span>
-                  <FaHackerrank
-                    color={props.mode === "dark" ? "white" : "black"}
-                    size={window.innerWidth < 500 ? 20 : 30}
-                  />
-                </a>
-              </li>
-              <li className="my-2">
-                <a
-                  rel="noreferrer"
-                  className="p-2 hvr"
-                  href="https://codeforces.com/profile/Ak_basniwal"
-                  target="_blank"
-                  style={{ textDecoration: "none" }}
-                >
-                  <span
-                    className="h5 mx-3"
-                    style={{ color: props.mode === "dark" ? "white" : "black" }}
-                  >
-                    Codeforces
-                  </span>
-                  <SiCodeforces
-                    color={props.mode === "dark" ? "white" : "black"}
-                    size={window.innerWidth < 500 ? 20 : 30}
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </span>
-      </div>
-      <div className="d-flex section my-3 mx-2">
-        <div className="circle"></div>
-        <span
-          className="top mx-2"
-          style={{
-            zIndex: 10,
-            borderLeft: `2px solid grey`,
-            paddingLeft: "20px",
-          }}
-        >
-          <h4 className="line">Summary</h4>
-          <div className="content">
-            I am Abhishek kumar basniwal and I'm frontend devloper,competitve
-            coder currently persuing my b.tech degree from mnit jaipur.
-            <ul style={{ listStyle: "square" }}>
-              <li className="tag my-2">MNIT S.ID - 2020UCP1821</li>
-              <li className="tag my-2">
-                VPO Ajmeri, Sikar ,Rajasthan,India(332707)
-              </li>
-              <li className="tag my-2">+91 9910571108</li>
-              <li className="tag my-2">akbasniwal2907@gmail.com</li>
-            </ul>
-          </div>
-        </span>
-      </div>
-    </div>
+    </>
   );
 }
-
-export default Resume;

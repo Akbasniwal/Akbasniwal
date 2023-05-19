@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+  
+  .type-text {
+    margin: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #00ff00;
+  }
+  .cursor {
+    border-left: 4px solid #00ff00;
+    animation: blink 3s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    padding: 7px;
+  }
+  .my-3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .mx-3 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .flex-row {
+    padding: 10px;
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .justify-content-center {
+    justify-content: space-between;
+  }
+  .justify-content-evenly {
+    justify-content: space-evenly;
+  }
+  .line {
+    margin-top: 20px;
+    width: 100%;
+    height: 1px;
+    background-color: #00f000;
+  }
+  
+  .box {
+    background-color: transparent;
+    border: 1px solid #222222;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    min-width: 400px;
+  }
+  .resumebox {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: auto;
+    justify-content: space-between;
+    grid-gap: 10px;
+    padding: 5px 10px;
+    margin: 0 5px 0 5px;
+  }
+  
+  .block {
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+    background-color: transparent;
+    align-items: center;
+  }
+  
+  .box:hover {
+    border: 1px solid #444444;
+  }
+  
+  .flex-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  span {
+    font-size: larger;
+  }
+  small {
+    font-size: large;
+  }
+  
+  .edu small {
+    opacity: 0.7;
+  }
+  .edu ul li {
+    position: relative;
+    margin-left: 15px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+  }
+  .edu ul li:hover::before {
+    animation: circle 1.2s infinite;
+  }
+  .edu ul li:hover span {
+    color: #00ff00;
+  }
+  @keyframes circle {
+    from {
+      box-shadow: 0 0 0 0px #00ff00;
+    }
+    to {
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+  }
+  .edu ul li:first-of-type::before {
+    width: 15px;
+    height: 15px;
+    left: -1px;
+  }
+  .edu ul li:last-of-type {
+    padding-bottom: 5px;
+  }
+  .edu ul li:last-of-type::after {
+    border-radius: 1.5px;
+    top: 0px;
+  }
+  .edu ul li::before,
+  .edu ul li::after {
+    content: "";
+    display: block;
+    position: absolute;
+  }
+  .edu ul li::before {
+    width: 10px;
+    height: 10px;
+    border: 3px solid white;
+    background: #00ff00;
+    border-radius: 50%;
+    left: 2px;
+    z-index: 1;
+  }
+  .edu ul li::after {
+    width: 3px;
+    height: 100%;
+    background: white;
+    left: 5px;
+    top: 10px;
+  }
+  .edu ul li span {
+    transition-duration: 0.3s;
+  }
+  .edu {
+    background: transparent;
+  }
+  
+  .skill {
+    background-color: #000000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .skill ul {
+    width: 100%;
+    margin-left: 15px;
+  }
+  .skill ul li {
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition-duration: 0.3s;
+    padding-right: 2rem;
+  }
+  .skillbar {
+    background: white;
+    height: 2px;
+    width: 50%;
+    height: 8px;
+    position: relative;
+    border-radius: 5px;
+  }
+  .bar {
+    position: absolute;
+    height: 8px;
+    background: #00ff00;
+    box-shadow: 0 0 0 white;
+    border-radius: 5px;
+  }
+  .skill ul li:hover {
+    color: #00ff00;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .resumebox {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 10px;
+      padding: 0px;
+      margin: 0;
+    }
+    .box {
+      min-width: 100%;
+    }
+  }
+  
+  .download-btn {
+    cursor: pointer;
+    margin: 50px;
+    color: #ada2a2;
+    background-color: #00ff0033;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    transition-duration: 0.3s;
+  }
+  
+  .download-btn:hover {
+    background-color: #00ff0055;
+    color: #ffffff;
+  }
